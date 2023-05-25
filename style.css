@@ -1,92 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@100&family=Roboto:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
-    --mainfontfamily: 'Roboto', sans-serif;
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 85%;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 10%;
 }
-body{
-    background-color:#e7f1f8;
+.container .frame h1 {
+  width: 474.46px;
+  height: 96px;
+  font-family: "Dela Gothic One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  color: #000000;
 }
-.gen .intro h1{
-    
-    margin-top:120px;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    text-align:center;
-    font:500 34px var(--mainfontfamily);
-    color:#3c4761;
+.container .frame p {
+  width: 396.89px;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.04em;
+  color: #757575;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.gen .intro hr{
-    width: 70px;
-    height: 5px;
-    background-color: #c8d9e5;
-    margin: 20px auto 30px ;
-    border: none;
-    outline: none;
+.container .frame .end {
+  display: flex;
+  gap: 10px;
 }
-.gen .intro p{
-    text-align: center;
-    font:0 14px var(--mainfontfamily);
+.container .frame .end .part1 svg {
+  position: relative;
+  z-index: 2;
 }
-.gen .box1,.gen .box2,.gen .box3,.gen .box4{
-    margin: 80px 0 0 60px;
-    display: inline-block;
-    height: 500px;
-    width:200px;
-    text-align: center;
-    
-}
-.gen .container{
-    max-width: 1080px;
-    margin:auto;
-} 
-.gen .container .box1pic{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-}
-.gen .container  h1{
-     color:#27283d;
-     text-transform: uppercase;
-     margin: 40px 0 20px 0;
-     font-family: var(--mainfontfamily);
-}
-.gen .container  p{
-    color:#30bae7;
-    font-family: var(--mainfontfamily);
-    font-size: 14px;
-    margin-bottom: 30px;
-}
-.gen .container  label{
-    margin-bottom: 30px;
-}
-.gen .container li{
-    margin-top: 30px;
-    display: inline-block;
-    list-style-type: none;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #bdd1df;
-    opacity: 0.4;
-    margin-left: 14px;
-}
-.gen .container  li:hover{
-    background-color: greenyellow;
-    opacity: 1;
-}
-.gen .container  li i{
-    color: #000;
-    font-size: 18px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.gen .container {
-    margin-bottom: 130px;
-}
+.container .frame .end .part1 img {
+  position: absolute;
+  z-index: 1;
+}/*# sourceMappingURL=style.css.map */
