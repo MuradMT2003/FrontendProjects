@@ -1,50 +1,13 @@
+//Problemlər:
+//1.Transform propertisini işlədə bilmirəm.
+//2.end divi bütün widthi alır.
+//3.Flex grow propertisi end divində işləmir.
+//4.Şəkili svgnin üzərində çıxara bilmirəm.
+//5.scssdə responsive design ölçüləri verə bilmirəm.
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@100&family=Roboto:wght@300;500&display=swap");
-$margin: auto;
-$familydel: "Dela Gothic One", cursive;
-$familymon: "Montserrat", sans-serif;
-@mixin base {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-@mixin container {
-  display: flex;
-  justify-content: space-evenly;
-  width: 85%;
-  flex-wrap: wrap;
-  margin: $margin;
-  margin-top: 10%;
-}
-@mixin framep {
-  width: 396.89px;
-  height: 50px;
-  font-family: $familymon;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 140%;
-  letter-spacing: -0.04em;
-  color: #757575;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-@mixin heading {
-  width: 474.46px;
-  height: 96px;
-  font-family: $familydel;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 100%;
-  letter-spacing: -0.04em;
-  color: #000000;
-}
-@mixin end {
-  display: flex;
-  gap: 10px;
-}
-
+@import "_sizemixins.scss ";
+@import "_styleforsmallscreen.scss";
 * {
   @include base();
 }
@@ -53,6 +16,7 @@ $familymon: "Montserrat", sans-serif;
   .frame {
     h1 {
       @include heading();
+      
     }
     p {
       @include framep();
@@ -61,13 +25,6 @@ $familymon: "Montserrat", sans-serif;
       @include end();
       .part1 {
         svg {
-            position: relative;
-             z-index: 2;
-        }
-        img {
-          position: absolute;
-          
-          z-index: 1;
         }
       }
       .part2 {
@@ -77,3 +34,9 @@ $familymon: "Montserrat", sans-serif;
     }
   }
 }
+@media only screen and(max-width: 768px){
+  body{
+    background-color: red;
+  }
+}
+

@@ -1,0 +1,11 @@
+@mixin small-screen {
+  @media only screen and(max-width:576) {
+    .container {
+      .frame {
+        h1 {
+          color: red;
+        }
+      }
+    }
+  }
+}
