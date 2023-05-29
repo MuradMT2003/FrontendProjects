@@ -1,42 +1,9 @@
-//Problemlər:
-//1.Transform propertisini işlədə bilmirəm.
-//2.end divi bütün widthi alır.
-//3.Flex grow propertisi end divində işləmir.
-//4.Şəkili svgnin üzərində çıxara bilmirəm.
-//5.scssdə responsive design ölçüləri verə bilmirəm.
-@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto:wght@300;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@100&family=Roboto:wght@300;500&display=swap");
-@import "_sizemixins.scss ";
-@import "_styleforsmallscreen.scss";
-* {
-  @include base();
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.container {
-  @include container();
-  .frame {
-    h1 {
-      @include heading();
-      
-    }
-    p {
-      @include framep();
-    }
-    .end {
-      @include end();
-      .part1 {
-        svg {
-        }
-      }
-      .part2 {
-        svg {
-        }
-      }
-    }
-  }
-}
-@media only screen and(max-width: 768px){
-  body{
-    background-color: red;
-  }
-}
-
+@import "_header.scss";
+@import "_homesection.scss";
+@import "_aboutussection.scss";
+@import "_services.scss";

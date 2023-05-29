@@ -1,0 +1,12 @@
+@import "_fontfamilys.scss";
+@mixin font {
+  font-family: $font-familypop;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+@mixin font_with_color{
+  font-family: $font-familypop;
+  font-style: normal;
+  color: #fff;
+  letter-spacing: 0.03em;
+}

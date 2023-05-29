@@ -1,0 +1,231 @@
+@import "_font.scss";
+@mixin services_container {
+  max-width: 85%;
+  margin: auto;
+  display: flex;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  justify-content: space-between;
+  gap: 5rem;
+}
+@mixin services_word {
+  p {
+    &:nth-child(1) {
+      @include font_with_color();
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 155%;
+      span {
+        color: #ff3839;
+      }
+    }
+
+    &:nth-child(3) {
+      @include font_with_color();
+      width: 530px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 155%;
+      text-align: justify;
+      margin-top: 20px;
+    }
+  }
+
+  h1 {
+    @include font_with_color();
+    width: 400px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125.5%;
+    span {
+      color: #ff3839;
+    }
+  }
+  button {
+    @include font_with_color();
+    width: 150px;
+    height: 40px;
+    background: #ff3839;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+}
+@mixin services_card {
+  display: flex;
+  flex-wrap: wrap;
+  .services_card_ux {
+    background-color: #ffffff;
+    margin-right: 1.5em;
+    margin-bottom: 3em;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    h3 {
+      @include font();
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      color: #000000;
+      margin-top: 30px;
+    }
+    p {
+      @include font();
+      width: 220px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 155%;
+      text-align: center;
+      color: #696969;
+      margin-top: 10px;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #ff3839;
+      position: absolute;
+      top: 0;
+      left: 7%;
+      transform: translate(100%, -50%);
+      padding: 10px;
+    }
+  }
+  .services_card_development {
+    background-color: #ffffff;
+    margin-right: 1.5em;
+    margin-bottom: 3em;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #ff3839;
+      position: absolute;
+      top: 0;
+      left: 7%;
+      transform: translate(100%, -50%);
+      padding: 10px;
+    }
+    p {
+      @include font();
+      width: 220px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 155%;
+      text-align: center;
+      color: #696969;
+      margin-top: 10px;
+    }
+    h3 {
+      @include font();
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      color: #000000;
+      margin-top: 30px;
+    }
+  }
+  .services_card_mobile_development {
+    background-color: #ffffff;
+    margin-right: 1.5em;
+    margin-bottom: 3em;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    h3 {
+      @include font();
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      color: #000000;
+      margin-top: 30px;
+    }
+    p {
+      @include font();
+      width: 220px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 155%;
+      text-align: center;
+      color: #696969;
+      margin-top: 10px;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #ff3839;
+      position: absolute;
+      top: 0;
+      left: 7%;
+      transform: translate(100%, -50%);
+      padding: 10px;
+    }
+  }
+  .services_card_seo {
+    background-color: #ffffff;
+    margin-right: 1.5em;
+    margin-bottom: 3em;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    h3 {
+      @include font();
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      color: #000000;
+      margin-top: 30px;
+    }
+    p {
+      @include font();
+      width: 220px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 155%;
+      text-align: center;
+      color: #696969;
+      margin-top: 10px;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #ff3839;
+      position: absolute;
+      top: 0;
+      left: 7%;
+      transform: translate(100%, -50%);
+      padding: 10px;
+    }
+  }
+}
+#Services {
+  background: #202020;
+  .services_container {
+    @include services_container();
+    .services_word {
+      @include services_word();
+    }
+    .services_card {
+      @include services_card();
+    }
+  }
+}
