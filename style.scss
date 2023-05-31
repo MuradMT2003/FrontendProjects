@@ -1,12 +1,42 @@
-@import "_header.scss";
-@import "_sectionone.scss";
-@import "_sectiontwo.scss";
-@import "_sectionthree.scss";
-@import "_mediaqueries.scss";
+.container {
+  .card {
+    background-color: #fff;
+    ul{
+        li{
+            a{
 
-
-
-
-
-
-
+            }
+        }
+    }
+    hr{
+        width: 90%;
+       margin-left: 6rem;
+       color: gray;
+    }
+    .gen{
+        display: flex;
+        flex-direction: column;
+        .sec{ width: 90%;
+            display: flex;
+            justify-content: flex-end ;
+           color: blue;
+       }
+       .thr{
+        width: 90%;
+        margin: auto;
+       }
+       .frt{
+        margin-left: 5rem;
+        gap:1rem;
+        display: flex;
+        justify-content: flex-start;
+       }
+       .fiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+    }
+    
+  }
+}

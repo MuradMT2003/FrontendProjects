@@ -1,127 +1,33 @@
-header {
-  background-color: #57614d;
+.container .card {
+  background-color: #fff;
 }
-header .container ul {
-  list-style: none;
-  text-transform: uppercase;
+.container .card hr {
+  width: 90%;
+  margin-left: 6rem;
+  color: gray;
 }
-header .container ul li a {
-  text-decoration: none;
-  font-size: 13px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #aab79e;
-  font-weight: bold;
-  font-family: "Times New Roman";
-  text-align: right;
-  filter: drop-shadow(0.5px 0.866px 0px rgba(0, 0, 0, 0.3));
+.container .card .gen {
+  display: flex;
+  flex-direction: column;
 }
-header .container ul li a:hover {
-  color: #ffffff;
-  transition: 0.3s;
+.container .card .gen .sec {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  color: blue;
 }
-header .container ul li:nth-child(1) a {
-  color: #ffffff;
+.container .card .gen .thr {
+  width: 90%;
+  margin: auto;
 }
-
-.section_one {
-  background-color: #d9d9d9;
+.container .card .gen .frt {
+  margin-left: 5rem;
+  gap: 1rem;
+  display: flex;
+  justify-content: flex-start;
 }
-.section_one .container .card {
-  background-color: #e9e9e9;
-}
-.section_one .container .card .row .section_row p {
-  width: 19rem;
-  font-size: 30px;
-  line-height: 48px;
-  color: #4e5944;
-  font-family: "Times New Roman";
-  text-align: center;
-  padding-left: 4px;
-}
-
-.section_two {
-  background-color: #e3e3e3;
-}
-.section_two .container .row .col-5 h3 {
-  font-size: 19px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #57614e;
-  font-family: "Times New Roman";
-}
-.section_two .container .row .col-5 .text-end p {
-  font-size: 16px;
-  line-height: 24px;
-  color: #57614e;
-  font-family: "Times New Roman";
-}
-.section_two .container .row .col-7 h2 {
-  font-size: 32px;
-  line-height: 24px;
-  color: #57614e;
-  font-family: "Times New Roman";
-}
-.section_two .container .row .col-7 p {
-  font-size: 16px;
-  line-height: 24px;
-  color: #57614e;
-  font-family: "Times New Roman";
-}
-
-.section_three {
-  background-color: #d9d9d9;
-}
-.section_three .container h2 {
-  font-size: 19px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #57614e;
-  font-family: "Times New Roman";
-  margin: 15px 0;
-}
-.section_three .container .card {
-  background-color: #d9d9d9;
-  border: none;
-  width: 15rem;
-}
-.section_three .container .card p {
-  font-size: 16px;
-  line-height: 24px;
-  color: #57614e;
-  font-family: "Times New Roman";
-}
-.section_three .container .card h5 {
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #626262;
-  font-weight: bold;
-  font-family: "Arial";
-}
-.section_three .container .card a {
-  border: none;
-  border-radius: 3px;
-  background-color: #676767;
-  font-size: 12px;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-family: "Arial";
-  text-align: center;
-  filter: drop-shadow(0.5px 0.866px 0px rgba(0, 0, 0, 0.3));
-}
-.section_three .container .card a:hover {
-  background-color: rgb(2, 129, 2);
-  transition: 0.3s;
-}
-
-@media only screen and (max-width: 992px) {
-  img {
-    background-repeat: no-repeat;
-  }
-  .section_one .container .card .row img {
-    width: 100%;
-    height: 100%;
-  }
+.container .card .gen .fiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
