@@ -1,80 +1,41 @@
 @import "_font.scss";
-@mixin header {
-  height: 6rem;
-  background: #202020;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.34);
+@mixin ul {
+  list-style: none;
+  text-transform: uppercase;
 }
-@mixin header_container {
-  max-width: 85%;
-  margin: auto;
-  display: flex;
-  padding-top: 1.3rem;
-  justify-content: space-between;
-  align-items: center;
+@mixin li {
+  &:nth-child(1) {
+    a {
+      color: #ffffff;
+    }
+  }
 }
-@mixin header_logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem;
-  h1 {
-    font-family: $font-familyin;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
+@mixin headera {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #aab79e;
+  font-weight: bold;
+  font-family: $font-time;
+  text-align: right;
+  filter: drop-shadow(0.5px 0.866px 0px rgba(0, 0, 0, 0.3));
+  &:hover {
     color: #ffffff;
+    transition: 0.3s;
   }
 }
-@mixin header_nav {
-  ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    gap: 1rem;
-    li {
-      &hover{
-        color: #ff3839;
+header {
+  background-color: #57614d;
+  .container {
+    ul {
+      @include ul();
+      li {
+        a {
+          @include headera();
+        }
+        @include li();
       }
-      a {
-        @include font_with_color();
-        text-decoration: none;
-        width: 50px;
-        height: 24px;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 24px;
-      }
-    }
-  }
-}
-@mixin header_button {
-  button {
-    @include font_with_color();
-    width: 128px;
-    height: 44px;
-    background: #ff3839;
-    border-radius: 5px;
-    border: none;
-    outline: none ;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    cursor: pointer;
-  }
-}
-.Header {
-  @include header();
-  .header_container {
-    @include header_container();
-    .header_logo {
-      @include header_logo();
-    }
-    .header_nav {
-      @include header_nav();
-    }
-    .header_button {
-      @include header_button();
     }
   }
 }

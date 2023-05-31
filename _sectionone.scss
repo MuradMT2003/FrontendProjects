@@ -1,0 +1,26 @@
+@import "_font.scss";
+@mixin row{
+    .section_row {
+        p {
+            width: 19rem;
+            font-size: 30px;
+            line-height: 48px;
+            color: #4e5944;
+            font-family: $font-time;
+            text-align: center;
+            padding-left: 4px;
+        }
+    }
+}
+.section_one {
+    background-color: #d9d9d9;
+
+    .container {
+        .card {
+            background-color: #e9e9e9;
+            .row {
+                @include row();
+            }
+        }
+    }
+}

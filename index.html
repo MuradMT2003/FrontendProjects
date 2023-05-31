@@ -4,168 +4,169 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>ProjectTask</title>
+    <title>BootstrapLearning</title>
   </head>
   <body>
-    <header class="Header">
-      <div class="header_container">
-        <div class="header_logo">
-          <svg
-            width="50"
-            height="53"
-            viewBox="0 0 50 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16.2537 11.6243C20.5582 7.70479 25.5971 5.90168 31.3897 6.23417C37.2845 6.57305 41.953 9.30969 45.9318 13.7663C47.3432 12.2509 48.6205 10.8762 49.9936 9.4056C49.8595 9.23296 49.7126 9.06032 49.5721 8.89408L48.6461 9.12426L48.8504 8.06285C46.0978 5.04488 42.6491 2.85813 38.9194 1.53456L37.8976 2.85173L38.1786 1.29159C35.5793 0.447581 32.865 0.019182 30.1571 0L29.7548 1.88623L29.0395 0.012788C25.8398 0.12788 22.6849 0.818434 19.811 2.09724C19.696 2.14839 19.5874 2.21233 19.4789 2.26348L19.5874 3.46556L18.7636 2.6727L14.0248 5.73543L15.7619 10.3455C15.8769 10.7739 16.0365 11.1959 16.2409 11.6115L16.2537 11.6243Z"
-              fill="#FF3839"
-            />
-            <path
-              d="M23.0425 9.96828C21.3246 10.7867 20.1494 11.4964 19.3767 12.2573V12.1422L17.2053 13.7216L19.9195 19.4378C19.9387 19.4698 19.9515 19.5018 19.977 19.5465C25.9165 12.2957 34.8704 13.2612 39.7241 19.2012C41.1802 17.8201 42.63 16.4454 44.0542 15.0899C39.2451 8.5488 30.4062 6.46435 23.0425 9.96828Z"
-              fill="#FF3839"
-            />
-            <path
-              d="M44.7758 40.5061C40.7204 44.6814 35.8028 46.7914 29.9975 46.8106C24.0963 46.8298 19.2617 44.3873 15.0211 40.1864C13.7055 41.7849 12.5112 43.2364 11.2339 44.7901C11.3808 44.9563 11.5341 45.1162 11.6873 45.276L12.5942 44.9883L12.4537 46.0561C15.3851 48.9014 18.9616 50.8708 22.7679 51.9642L23.7067 50.5895L23.5215 52.1688C26.1656 52.8402 28.9054 53.1023 31.6069 52.9553L31.8942 51.0498L32.7181 52.8721C35.905 52.5588 39.0088 51.6828 41.7997 50.225C41.9147 50.1675 42.0169 50.0971 42.1191 50.0332L41.9338 48.8439L42.8024 49.5856L47.3432 46.2351L45.3251 41.7401C45.1846 41.3181 44.9994 40.9089 44.7695 40.5061H44.7758Z"
-              fill="#FF3839"
-            />
-            <path
-              d="M20.8903 34.3806C19.5236 35.8512 18.1568 37.3155 16.8157 38.7541C22.0207 44.9883 30.9682 46.5293 38.1019 42.5714C39.7688 41.6506 43.6965 38.4664 43.6965 38.4664L40.6374 32.9292C40.6118 32.8972 40.599 32.8652 40.5735 32.8269C35.0875 40.4294 26.0889 40.0137 20.8839 34.3806H20.8903Z"
-              fill="#FF3839"
-            />
-            <path
-              d="M12.3579 7.13571C10.9592 8.536 9.76495 9.94908 8.76226 11.3622L10.327 12.8456L8.24496 12.1103C6.21405 15.1602 5.02615 18.191 4.43221 21.1066L5.92665 21.9059L4.25977 22.0657C3.69776 25.5569 3.96599 28.8562 4.6238 31.7719L7.95118 31.5353L4.82817 32.6223C5.67758 35.9152 6.98681 38.6646 8.07252 40.57L9.5989 39.2529L8.45571 41.2222C9.32428 42.6673 9.96931 43.4857 9.96931 43.4857L21.7141 26.7973L12.3515 7.13571H12.3579Z"
-              fill="#FF3839"
-            />
-          </svg>
-          <h1>Canvas Lancer</h1>
-        </div>
-        <div class="header_nav">
-          <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#AboutUs">About Us</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#Testimonials">Testimonials</a></li>
-            <li><a href="#Faqs5">Faqs</a></li>
-          </ul>
-        </div>
-        <div class="header_button">
-          <button>Contact Us</button>
+    <header class="py-3 border-bottom border-white border-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4 text-center">
+            <img src="Manes Winchester.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-8 pt-4 d-flex justify-content-center">
+            <ul class="gap-4 d-none d-lg-flex">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Practices</a>
+              </li>
+              <li>
+                <a href="#">Our lawyers</a>
+              </li>
+              <li>
+                <a href="#">News</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
-    <section id="Home">
-      <div class="home_backphoto">
-        <div class="home_container">
-          <div class="home_intro">
-            <p class="home_intro_pone">
-              Welcome To <span>Canavas Lancer</span>
-            </p>
-            <p class="home_intro_ptwo">
-              Designing the Future with Canvas Lancer
-            </p>
-            <hr />
-            <p class="home_intro_pthree">
-              Lorem ipsum dolor sit amet consectetur. Aliquam quisque cursus
-              proin adipiscing quis diam. Eu fringilla elit commodo nec aliquet.
-              Augue pharetra nibh co
-            </p>
-            <div class="home_intro_button">
-              <button class="home_button_bone">Hire Us</button>
-              <button class="home_button_btwo">View Portfolio</button>
+    <section class="section_one">
+      <div class="container">
+        <div class="card">
+          <div class="row flex-column flex-lg-row">
+            <div
+              class="col-12 p-4 col-lg-4 d-flex justify-content-center section_row"
+            >
+              <div>
+                <p>It's never easy...</p>
+                <p>When it comes to family.</p>
+                <p>But we can set everything straight.</p>
+              </div>
+            </div>
+            <div class="col-12 text-center col-lg-8">
+              <img
+                src="https://buildingontheword.org/files/2014/12/family.jpg"
+                class="img-fluit"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="AboutUs">
-      <div class="aboutus_container">
-        <div class="aboutus_container_image">
-          <img src="Rectangle 11.png" alt="" />
-          <img src="Rectangle 12.png" alt="" />
-        </div>
-        <div class="aboutus_container_word">
-          <p><span>About </span>CanvasLancer</p>
-          <h1>Introduction To Best <span>Digital Agency</span></h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
-            enim id gravida pulvinar. Tristique consectetur mi curabitur congue
-            enim dignissim amet justo. Porta morbi nulla aliquet adipiscing. Sed
-            diam mauris erat faucibus eu posuere ultricies quisque amet. Quam
-            pellentesque in tristique
-            <br />
-            <br />
-            sed neque scelerisque quam pulvinar. Risus dictum elementum lacus
-            urna. Neque eget sagittis vulputate nam id morbi id. Aliquam
-            molestie posuere pulvinar arcu
-          </p>
-          <button>Hire Us</button>
-        </div>
-      </div>
-    </section>
-    <section id="Services">
-      <div class="services_container">
-        <div class="services_word">
-          <p>What We Are <span>Offering</span></p>
-          <h1><span>Services</span> We Can Offer You !</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
-            enim id gravida pulvinar. Tristique consectetur mi curabitur congue
-            enim dignissim amet justo. Porta morbi nulla aliquet adipiscing. Sed
-            diam mauris erat faucibus eu posuere ultricies quisque amet. Quam
-            pellentesque in tristique
-          </p>
-          <button>Hire Us</button>
-        </div>
-        <div class="services_card">
-          <div class="services_card_ux">
-            <img src="Ux.png" alt="" />
-            <h3>UI/UX</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
-              enim id gravida pulvinar. Tristique
+    <section class="border-top border-white border-3"></section>
+    <section class="section_two py-4">
+      <div class="container">
+        <div class="row flex-column flex-sm-row">
+          <div
+            class="col-12 text-start col-sm-7 border-end border-white border-2"
+          >
+            <h2 class="text-start">The Manes winchester promise</h2>
+            <p class="mt-4">
+              This website template has been designed by Free Website Templates
+              for you, for free. You can replace all this text with your own
+              text. You can remove any link to our website from this website
+              template, you're free to use this website template without linking
+              back to us. If you're having problems editing this website
+              template, then don't hesitate to ask for help on the Forums.
             </p>
           </div>
-          <div class="services_card_development">
-            <img src="Development.png" alt="" />
-            <h3>Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
-              enim id gravida pulvinar. Tristique
-            </p>
-          </div>
-          <div class="services_card_mobile_development">
-            <img src="Mobile.png" alt="" />
-            <h3>Mobile Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
-              enim id gravida pulvinar. Tristique
-            </p>
-          </div>
-          <div class="services_card_seo">
-            <img src="Seo.png" alt="" />
-            <h3>SEO</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
-              enim id gravida pulvinar. Tristique
-            </p>
+          <div class="col-12 col-sm-5">
+            <h3 class="text-start">Testimonials</h3>
+            <figure class="text-start">
+              <blockquote class="blockquote">
+                <p>
+                  “Aenean ullamcorper purus vitae nisl tristique sollicitudin.
+                  Quisque vestibulum, erat ornare.”
+                </p>
+              </blockquote>
+              <div>
+                <figcaption class="blockquote-footer pe-5 text-end">
+                  John Doe and Jane Doe
+                </figcaption>
+              </div>
+            </figure>
           </div>
         </div>
       </div>
     </section>
-    <!-- <section id="Portfolio">
+    <section class="section_three my-1">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center text-lg-start">Why choose us?</h2>
+          <div class="col-12 d-flex justify-content-center col-md-6 col-lg-3">
+            <div>
+              <div class="card">
+                <img src="" class="card-img-top img-thumbnail" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Our Lawyers</h5>
+                  <p class="card-text">
+                    Our website templates are created with inspiration, checked
+                    for quality and originality.
+                  </p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center col-md-6 col-lg-3">
+            <div>
+              <div class="card">
+                <img src="" class="card-img-top img-thumbnail" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Get to know us more</h5>
+                  <p class="card-text">
+                    Just browse through all our Free Website Templates and ﬁnd
+                    what you’re looking for. Lorem ipsum dolor sit.
+                  </p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center col-md-6 col-lg-3">
+            <div>
+              <div class="card">
+                <img src="" class="card-img-top img-thumbnail" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">what we offer</h5>
+                  <p class="card-text">
+                    Join the discussion on our forum and meet other people in
+                    the community. Lorem ipsum dolor sit.
+                  </p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center col-md-6 col-lg-3">
+            <div>
+              <div class="card">
+                <img src="" class="card-img-top img-thumbnail" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">get in touch with us</h5>
+                  <p class="card-text">
+                    And we love the challenge of doing something diferent and
+                    something special. Lorem ipsum dolor sit.
+                  </p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="Testimonials"></section>
-    <section id="Faqs"></section> 
-    <footer class="Footer"></footer>-->
+    <script src="bootstrap.min.js"></script>
   </body>
 </html>

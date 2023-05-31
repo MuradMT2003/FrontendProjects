@@ -1,0 +1,17 @@
+@media only screen and (max-width: 992px) {
+  img {
+    background-repeat: no-repeat;
+  }
+  .section_one {
+    .container {
+      .card {
+        .row {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
