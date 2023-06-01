@@ -1,42 +1,10 @@
-.container {
-  .card {
-    background-color: #fff;
-    ul{
-        li{
-            a{
+//Task 1
+// .container{
+//     table,td,th{
+//         border: 1px solid black;
+//         height: 50px;
+//         width: 450px;
+//     }
+// }
 
-            }
-        }
-    }
-    hr{
-        width: 90%;
-       margin-left: 6rem;
-       color: gray;
-    }
-    .gen{
-        display: flex;
-        flex-direction: column;
-        .sec{ width: 90%;
-            display: flex;
-            justify-content: flex-end ;
-           color: blue;
-       }
-       .thr{
-        width: 90%;
-        margin: auto;
-       }
-       .frt{
-        margin-left: 5rem;
-        gap:1rem;
-        display: flex;
-        justify-content: flex-start;
-       }
-       .fiv{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       }
-    }
-    
-  }
-}
+

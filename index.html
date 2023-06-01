@@ -3,59 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bootstrap.min.css" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>BootstrapLearning</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
   </head>
-  <body>
-    <div class="container pt-3">
-      <div class="card ">
-        <ul class="d-flex gap-3  list-unstyled pt-3 d-flex justify-content-center align-items-center">
-          <li><a class="active">Stays</a></li>
-          <li><a>Flights</a></li>
-          <li><a>Cars</a></li>
-          <li><a>Packages</a></li>
-          <li><a>Things to do</a></li>
-          <li><a>Cruises</a></li>
-        </ul>
-        <hr/>
-        <div class="gen">
-          <div class="sec">
-            <p >1 room,2 travelers</p>
-          </div>
-          <div class="thr d-flex justify-content-around "> 
-            
-              <input type="text"/>
-            
-            
-              <input type="date">
-            
-            
-              <input type="date">
-            
-          </div>
-          <div class="frt">
-            <div class="fi">
-              <input type="checkbox"/>
-              <label>Add a flight</label>
-            </div>
-            <div class="si">
-              <input type="checkbox"/>
-              <label>Add a car</label>
-            </div>
-            
-            
-
-
-          </div>
-          <div class="fiv">
-               <button class="btn btn-primary text-white mb-3">Search</button>
+  <body class="bg-transparent">
+    <!--Task-1-->
+    <!-- <div class="container d-flex justify-content-center align-items-center">
+        <table id="tbl" class="table text-center mt-3">
+          </table>
+    </div> -->
+    <!--End-->
+    <!--TASK 2-->
+    <!-- <header class="bg-body-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center pt-3">
+            <h1 class="h1 pb-3">Login Page</h1>
           </div>
         </div>
-        
       </div>
-    </div>
-    <script src="bootstrap.min.js"></script>
+    </header>
+    <div class="container d-flex justify-content-center align-items-center">
+      <form class="mt-5">
+        <label class="form-label mt-3 text-info" for="text">Username:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="text"
+          placeholder="admin@gmail.com"
+        />
+        <label class="form-label text-info mt-3" for="pass">Password:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="pass"
+          placeholder="*****"
+        />
+        <div class="d-flex justify-content-center align-items-center">
+          <button
+            type="button"
+            onclick="validation()"
+            class="btn btn-success mt-3 btn-outline-info text-white text-center"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div> -->
+    <!--End-->
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
