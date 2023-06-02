@@ -46,19 +46,21 @@
   
 // }
 //#endregion
-loop();
-function loop(){
-  let pro=prompt("how many number are you want to get on range ?");
-  let str=prompt("range start");
-  let end=prompt("range end");
-  let count=0;
-  for(let i=str;i<=end;i++){
-    if(count<pro){
-      console.log(i);
-    }
-    else{
-      break;
-    }
-    count++;
-  }
-}
+//#region Task-4
+// loop();
+// function loop(){
+//   let pro=prompt("how many number are you want to get on range ?");
+//   let str=prompt("range start");
+//   let end=prompt("range end");
+//   let count=0;
+//   for(let i=str;i<=end;i++){
+//     if(count<pro){
+//       console.log(i);
+//     }
+//     else{
+//       break;
+//     }
+//     count++;
+//   }
+// }
+//#endregion
