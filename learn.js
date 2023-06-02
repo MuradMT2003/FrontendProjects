@@ -26,3 +26,21 @@ switch (day) {
     break;
 }
 //#endregion
+//#region  Task-2
+// let age=prompt("Yas daxil et:");
+// alert(ageChecker(age)?"Yaş 20-dən böyükdür.":age==20?"Yaş 20-dir.":"Yaş 20-dən kiçikdir.");
+// function ageChecker(age){
+//   return age>20;
+// }
+//#endregion
+//#region Task-3
+let number=document.getElementById('num').value;
+function numcheck{
+  if(number%2==0){
+      alert("<p>This is even number<p/>")
+  }
+  else{
+    alert("<p>This is odd number<p/>")
+  }
+}
+//#endregion
