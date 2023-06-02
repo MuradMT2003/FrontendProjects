@@ -1,30 +1,30 @@
 "use strict";
 //#region Task-1
-let date = new Date();
-let day = date.getDay();
-switch (day) {
-  case 0:
-    console.log("Today is:Sunday");
-    break;
-  case 1:
-    console.log("Today is:Monday");
-    break;
-  case 2:
-    console.log("Today is:Tuesday");
-    break;
-  case 3:
-    console.log("Today is:Wednesday");
-    break;
-  case 4:
-    console.log("Today is:Thursday");
-    break;
-  case 5:
-    console.log("Today is:Wednesday");
-    break;
-  case 6:
-    console.log("Today is:Saturday");
-    break;
-}
+// let date = new Date();
+// let day = date.getDay();
+// switch (day) {
+//   case 0:
+//     console.log("Today is:Sunday");
+//     break;
+//   case 1:
+//     console.log("Today is:Monday");
+//     break;
+//   case 2:
+//     console.log("Today is:Tuesday");
+//     break;
+//   case 3:
+//     console.log("Today is:Wednesday");
+//     break;
+//   case 4:
+//     console.log("Today is:Thursday");
+//     break;
+//   case 5:
+//     console.log("Today is:Wednesday");
+//     break;
+//   case 6:
+//     console.log("Today is:Saturday");
+//     break;
+// }
 //#endregion
 //#region  Task-2
 // let age=prompt("Yas daxil et:");
@@ -34,13 +34,31 @@ switch (day) {
 // }
 //#endregion
 //#region Task-3
-let number=document.getElementById('num').value;
-function numcheck{
-  if(number%2==0){
-      alert("<p>This is even number<p/>")
-  }
-  else{
-    alert("<p>This is odd number<p/>")
+// function numcheck(){
+//   let number=document.getElementById('num').value;
+//   let par=document.getElementById('par');
+//   if(number%2==0){
+//       par.innerText="This is even number";
+//   }
+//   else{
+//     par.innerText="This is odd number";
+//   }
+  
+// }
+//#endregion
+loop();
+function loop(){
+  let pro=prompt("how many number are you want to get on range ?");
+  let str=prompt("range start");
+  let end=prompt("range end");
+  let count=0;
+  for(let i=str;i<=end;i++){
+    if(count<pro){
+      console.log(i);
+    }
+    else{
+      break;
+    }
+    count++;
   }
 }
-//#endregion
