@@ -43,7 +43,7 @@ function Show() {
     
   let data = "";
   for (let i = 0; i < arr.length; i++) {
-    data += `<li class=" d-flex justify-content-between">
+    data += `<li class="list-group-item d-flex justify-content-between">
       ${arr[i]} <button onclick="Remove(${i})" class="btn btn-danger btn=sm">Delete</button> </li> `;
   }
   list.innerHTML = data;
