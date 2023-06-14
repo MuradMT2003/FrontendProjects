@@ -24,17 +24,17 @@ btn.forEach((item,index)=>{
                 timer: 1200
               })
             elements.push(item);
-            localStorage.setItem(`product`,card.innerText);
+            localStorage.setItem(`producties`,card.innerText);
 
         } 
    });
 });
+
 btnr.forEach((item,index)=>{
     item.addEventListener('click',()=>{
         let sectemp=0;
         if(elements.includes(elements[sectemp])){
             elements.pop(item);
-            buttons.pop(item);
             Swal.fire({
                 position: 'center',
                 icon: 'success',
@@ -43,7 +43,7 @@ btnr.forEach((item,index)=>{
                 timer: 1200
               })
             card.innerText--;
-            localStorage.setItem(`product`,card.innerText);
+            localStorage.setItem(`producties`,card.innerText);
         }
         else{
             Swal.fire({
@@ -57,4 +57,4 @@ btnr.forEach((item,index)=>{
         sectemp++;
    });
 });
-localStorage.getItem('product')!==null?card.innerText=localStorage.getItem('product'):card.innerText;
+localStorage.getItem('producties')!==null?card.innerText=localStorage.getItem('producties'):card.innerText;
